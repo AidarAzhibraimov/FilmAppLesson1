@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ui.films_detail.FilmDetailFragment">
+
+    <ImageView
+        android:id="@+id/img_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/img_detail"
+        tools:text="title"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_director"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Директор:"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_detail" />
+
+    <TextView
+        android:id="@+id/tv_director_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Hayao Miyazaki"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_director"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_detail" />
+
+    <TextView
+        android:id="@+id/tv_producer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Продюсер:"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_director" />
+
+    <TextView
+        android:id="@+id/tv_producer_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Isao Takahata"
+        android:textSize="24sp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintStart_toEndOf="@+id/tv_producer"
+        app:layout_constraintTop_toBottomOf="@+id/tv_director" />
+
+    <TextView
+        android:id="@+id/tv_releaseDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Дата выхода:"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_releaseDate_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2022"
+        android:textSize="16sp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_releaseDate" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
